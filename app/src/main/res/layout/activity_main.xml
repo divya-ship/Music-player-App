@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:background="@android:color/holo_green_light"
+
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/back"
+        android:id="@+id/backward"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/play"
+        android:background="@drawable/ic_launcher_playyround"
+        android:layout_alignTop="@+id/backward"
+        android:layout_toRightOf="@+id/backward"
+        android:layout_marginLeft="10dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_launcher_round_pause"
+        android:id="@+id/pause"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/play"
+        android:layout_alignTop="@+id/play"/>
+
+    <ImageButton
+        android:id="@+id/forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/play"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/pause"
+        android:background="@drawable/forward_round" />
+
+
+    <TextView
+        android:id="@+id/songstarttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignTop="@+id/seek"
+        android:layout_marginTop="-25dp"
+        android:text="0 min,0 sec"
+
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backward"
+        android:layout_marginLeft="-17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toLeftOf="@+id/songendtime"
+        android:layout_toRightOf="@+id/songstarttime" />
+
+    <TextView
+        android:id="@+id/songendtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seek"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginTop="-25dp"
+        android:layout_toRightOf="@+id/forward"
+        android:text="0min,0sec"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="404dp"
+        app:srcCompat="@drawable/armanmalik" />
+
+
+</RelativeLayout>
+
+
